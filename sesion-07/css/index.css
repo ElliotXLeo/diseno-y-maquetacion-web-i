@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: royalblue;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+.header {
+  padding-top: 2rem;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.nav {
+  padding: 1rem;
+}
+
+.nav__titulo {
+  margin: 0;
+  color: gold;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  z-index: 100;
+}
+
+.nav__titulo:hover {
+  filter: brightness(125%)
+}
+
+.nav__sub-titulo {
+  margin: 0;
+}
+
+.nav__boton {
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: royalblue;
+  border-radius: 0.5em;
+  color: white;
+  transition: all 0.5s;
+}
+
+.nav__boton:hover {
+  filter: brightness(125%)
+}
+
+.nav__list {
+  display: flex;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.nav__enlace {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.nav__enlace:link {
+  color: white;
+}
+
+.nav__enlace:hover {
+  filter: brightness(75%);
+  box-shadow: 0 0.25rem 0 0 gold;
+}
+
+.nav__enlace:active {
+  color: royalblue;
+}
+
+.nav__enlace:visited {
+  color: gold;
+}
+
+.main {
+  width: 100%;
+  padding: 1rem;
+}
+
+.contenedor {
+  background-color: #1e1e1e;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.aside {
+  padding: 1rem;
+}
+
+.footer {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.box-position {
+  background-color: royalblue;
+  color: white;
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0.2rem solid white;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.contenedor__primero {
+  background-color: royalblue;
+  position: static;
+}
+
+.contenedor__segundo {
+  background-color: dodgerblue;
+  position: relative;
+  top: 0;
+  left: 1rem;
+}
+
+.contenedor__tercero {
+  background-color: blueviolet;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sticky-top-0 {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.contenedor__imagenes {
+  position: relative;
+}
+
+.contenedor__imagen {
+  position: relative;
+  max-width: 50%;
+  border-radius: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contenedor__texto--absoluto {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.contenedor__texto--centrado {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenedor__texto--fondo-transparente {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.contenedor--fondo-geometria {
+  background: url(../img/background/fondo-geometrico.png), linear-gradient(to right, #2196F3, #009688);
+  background-attachment: fixed;
+}
+
+.contenedor--fondo-comida {
+  background: url(https://radioambulante.org/wp-content/uploads/2017/01/Contra-la-gastronomía-peruana-Por-Rocío-Urtecho.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.contenedor__contenido {
+  height: 50vh;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.contenedor__tarjeta {
+  padding: 0.5rem;
+}
+
+.bg-tomato {
+  background-color: tomato;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-dodgerblue {
+  background-color: dodgerblue;
+}
+
+.bg-mediumseagreen {
+  background-color: mediumseagreen;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bg-slateblue {
+  background-color: slateblue;
+}
+
+.bg-violet {
+  background-color: violet;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.contenedor__lista {
+  margin: 0;
+  padding: 0 0.5rem;
+  list-style-type: none;
+  counter-reset: item-personalizado;
+}
+
+.contenedor__item-comida {
+  padding: 0.2rem;
+  color: white;
+}
+
+.contenedor__item-comida:nth-child(odd) {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.contenedor__item-comida:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.contenedor__item-comida::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(https://images.emojiterra.com/mozilla/512px/1f372.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+.contenedor__item-numero {
+  position: relative;
+  background-color: rgba(211, 211, 211, 0.5);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 4rem;
+  margin: 0.5rem 0;
+}
+
+.contenedor__item-numero::before {
+  content: counter(item-personalizado);
+  counter-increment: item-personalizado;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: tomato;
+  color: white;
+  font-size: 2rem;
+  height: 2rem;
+}
+
+.contenedor__descripcion {
+  padding: 0 0.5rem;
+  counter-reset: termino-definicion;
+}
+
+.contenedor__termino {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.contenedor__termino::before {
+  content: counter(termino-definicion)"\BB";
+  counter-increment: termino-definicion;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: tomato;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.contenedor__detalle {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.contenedor__termino, .contenedor__detalle {
+  padding-left: 5rem;
+  line-height: 1.5rem;
+}
+
+.contenedor__parrafo {
+  line-height: 2em;
+}
+
+.img-float-r {
+  float: right;
+  border-radius: 0.5rem;
+}
+
+.img-float-l {
+  float: left;
+  border-radius: 0.5rem;
+}
+
+.img-clear-b {
+  clear: both;
+}
+
+.m-p-cuarto {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.w-cuarto {
+  width: 25%;
+}
+
+.contenedor__videos {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contenedor__video {
+  width: 100%;
+}
+
+.text-align-c {
+  text-align: center;
+}
+
+.dos-columnas {
+  width: 40%;
+}
+
+.tres-columnas {
+  width: 30%;
+}
+
+.columnas-responsivas {
+  max-width: 20%;
+}
+
+.columnas-responsivas {
+  max-width: 20%;
+}
+
+@media (max-width: 854px) {
+  .columnas-responsivas {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 640px) {
+  .columnas-responsivas {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 426px) {
+  .columnas-responsivas {
+    max-width: 100%;
+  }
+}
+
+/* @media (max-width: 256px) {
+  .columnas-responsivas{
+    max-width: 100%;
+  }
+} */
+
+.contenedor__iframe {
+  width: 100%;
+  border: none;
+  height: 50vh;
+}
+
+.main__flex-container {
+  background-color: #1e1e1e;
+  width: 100%;
+  /* height: 80vh; */
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* justify-content: center; */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  justify-content: space-around;
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: stretch;
+  /* align-items: baseline; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  align-content: stretch;
+  /* align-content: center; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+}
+
+.main__box {
+  margin: 0 1rem;
+  /* padding: 1rem 2rem; */
+  /* width: 10%; */
+  background-color: dodgerblue;
+  flex: 1;
+}
+
+.main__box--primero {
+  order: -10;
+}
+
+.main__box--fg-1 {
+  flex-grow: 1;
+}
+
+.main__box--fs-0 {
+  flex-shrink: 0;
+}
+
+.main__box--fb-4 {
+  flex-basis: 4rem;
+}
+
+.main__grid-container{
+  background-color: #1e1e1e;
+  width: 100%;
+  /* height: 80vh; */
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 2rem 2rem 2rem; */
+  /* grid-template-columns: auto auto auto auto; */
+  /* grid-template-columns: 5rem 10rem auto 2rem; */
+  /* grid-template-rows: 2rem 4rem; */
+  grid-auto-rows: 2rem;
+  /* justify-content: space-evenly; */
+  /* align-content: center; */
+  /* column-gap: 1rem; */
+  /* row-gap: 1rem; */
+  /* gap: 1rem 1rem; */
+  gap: 1rem;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 4rem;
+  gap: 1rem;
+}
+
+.main__grid-item{
+  background-color: dodgerblue;
+}
+
+/* .main__grid-item--diferente{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+} */
+
+@media (max-width: 640px) {
+  .body {
+    font-size: 0.8rem;
+  }
+
+  .main__flex-container{
+    flex-direction: column;
+  }
+}
