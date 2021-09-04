@@ -1,0 +1,83 @@
+* {
+  color: white;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+body {
+  background-color: royalblue;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-size: 1cm; */
+  /* font-size: 10mm; */
+  /* font-size: 40Q; */
+  /* font-size: 1in/2.54; */
+  /* 1cm = 10mm = 40Q = 1/2.54in */
+  /* font-size: 1pc; */
+  /* font-size: 1pt; */
+
+  font-size: 16px;
+
+  
+}
+
+h1 {
+  color: gold;
+  /* text-align: center; */
+  transition: all 0.5s;
+}
+
+h1:hover {
+  filter: brightness(125%)
+}
+
+p {
+  color: aquamarine;
+  text-align: justify;
+}
+
+#subTitulo {
+  /* text-align: center; */
+  color: aquamarine;
+}
+
+/* .header {
+  text-align: center;
+  color: white;
+}
+
+footer.footer {
+  text-align: center;
+  color: white;
+} */
+
+.header, footer.footer {
+  text-align: center;
+  /* color: white; */
+  /* font-size: 1em; */
+  /* font-size: 1ex; */
+  /* font-size: 1ch; */
+  font-size: 1rem;
+  /* font-size: 1lh; */
+  /* width: 50vw; */
+  /* height: 50vh; */
+  /* width: 50vmin; */
+  /* width: 50vmax; */
+}
+
+.bg-theme-color {
+  background-color: #1e1e1e;
+}
+
+h2[id] {
+  font-weight: lighter;
+}
+
