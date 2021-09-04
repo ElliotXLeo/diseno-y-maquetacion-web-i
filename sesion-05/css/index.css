@@ -1,0 +1,346 @@
+@media (max-width: 640px) {
+  .body {
+    font-size: 0.8rem;
+  }
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: royalblue;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+.header {
+  padding-top: 2rem;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.nav__titulo {
+  margin: 0;
+  color: gold;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  z-index: 100;
+}
+
+.nav__titulo:hover {
+  filter: brightness(125%)
+}
+
+.nav__sub-titulo {
+  margin: 0;
+}
+
+.boton {
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  background: royalblue;
+  border-radius: 0.5em;
+  color: white;
+  transition: all 0.5s;
+}
+
+.boton:hover {
+  filter: brightness(125%)
+}
+
+.nav__list {
+  padding: 0.5rem 0;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.nav__enlace {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.nav__enlace:link {
+  color: white;
+}
+
+.nav__enlace:hover {
+  filter: brightness(75%)
+}
+
+.nav__enlace:active {
+  color: royalblue;
+}
+
+.nav__enlace:visited {
+  color: gold;
+}
+
+.contenedor {
+  background: #1e1e1e;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.footer {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background: royalblue;
+  color: white;
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0.2rem solid white;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.contenedor__primero {
+  background: royalblue;
+  position: static;
+}
+
+.contenedor__segundo {
+  background: dodgerblue;
+  position: relative;
+  top: 0;
+  left: 1rem;
+}
+
+.contenedor__tercero {
+  background: blueviolet;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .sticky-top-0 {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+} */
+
+.contenedor__imagenes {
+  position: relative;
+}
+
+.contenedor__imagen {
+  position: relative;
+  max-width: 50%;
+  border-radius: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contenedor__texto--absoluto {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.contenedor__texto--centrado {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenedor__texto--fondo-transparente {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.contenedor--fondo-geometria {
+  /* background-color: black; */
+  /* background-image: url(https://us.123rf.com/450wm/nadiinko/nadiinko1808/nadiinko180800072/112037430-patrón-transparente-de-vector-geométrico-simple-moderno-con-textura-de-línea-dorada-sobre-fondo-blan.jpg?ver=6); */
+  /* background-image: url(https://media.istockphoto.com/vectors/abstract-simple-geometric-vector-seamless-pattern-with-gold-line-on-vector-id1160720443?k=6&m=1160720443&s=612x612&w=0&h=oLzqIKD0IjLngapr4l2Vu-0CMTDajzN_V6OgpknRm4g=); */
+  /* background-image: url(https://p4.wallpaperbetter.com/wallpaper/399/192/946/geometric-patterns-geometric-patterns-retro-design-wallpaper-preview.jpg); */
+  /* background-image: url(https://i.pinimg.com/736x/3d/60/f7/3d60f717815806daa13a340bc83e3a39.jpg); */
+  /* background-image: url(https://i.pinimg.com/236x/2b/66/fb/2b66fb85d1db2c0d493a592f6871260a--geometric-prints-geometric-patterns.jpg); */
+  /* background-image: url(https://img.freepik.com/free-vector/black-white-hypnotic-background-abstract-seamless-pattern-illustration_118124-3765.jpg?size=626&ext=jpg); */
+  /* background-image: url(../img/fondo.png) ; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-attachment: scroll; */
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  /* background: black url(../img/fondo.png) repeat center fixed; */
+  background: url(../img/fondo.png), linear-gradient(to right, #2196F3, #009688);
+  background-attachment: fixed;
+}
+
+.contenedor--fondo-comida {
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 50%; */
+  background: url(https://radioambulante.org/wp-content/uploads/2017/01/Contra-la-gastronomía-peruana-Por-Rocío-Urtecho.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.contenedor__contenido {
+  height: 50vh;
+  background-color: white;
+  /* opacity: 1;
+  opacity: 0.6;
+  opacity: 0.3; */
+  opacity: 0.1;
+}
+
+.contenedor__tarjeta {
+  padding: 0.5rem 0;
+}
+
+.bg-tomato {
+  background-color: tomato;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-dodgerblue {
+  background-color: dodgerblue;
+}
+
+.bg-mediumseagreen {
+  background-color: mediumseagreen;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bg-slateblue {
+  background-color: slateblue;
+}
+
+.bg-violet {
+  background-color: violet;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.contenedor__lista {
+  margin: 0;
+  padding: 0 0.5rem;
+  list-style-type: none;
+  counter-reset: item-personalizado;
+}
+
+.contenedor__item-comida {
+  padding: 0.2rem;
+  color: white;
+}
+
+.contenedor__item-comida:nth-child(odd) {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.contenedor__item-comida:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.contenedor__item-comida::before {
+  /* content: "🍲";
+  padding-right: 0.5rem; */
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(https://images.emojiterra.com/mozilla/512px/1f372.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+.contenedor__item-numero {
+  /* list-style-type: georgian; */
+  /* list-style-type: lower-greek; */
+  /* list-style-type: decimal; */
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: upper-alpha; */
+  /* list-style-type: lower-roman; */
+  /* list-style-type: upper-roman; */
+  /* list-style-type: decimal; */
+  /* counter-increment: item;
+  position: relative; */
+  position: relative;
+  background-color: rgba(211, 211, 211, 0.5);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 4rem;
+  margin: 0.5rem 0;
+}
+
+.contenedor__item-numero::before {
+  /* color: white;
+  content: counter(item) "-";
+  left: -2rem;
+  position: absolute; */
+  content: counter(item-personalizado);
+  counter-increment: item-personalizado;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: tomato;
+  color: white;
+  font-size: 2rem;
+  height: 2rem;
+}
+
+.contenedor__descripcion {
+  padding: 0 0.5rem;
+  counter-reset: termino-definicion;
+}
+
+.contenedor__termino {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.contenedor__termino::before {
+  content: counter(termino-definicion)"\BB";
+  counter-increment: termino-definicion;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: tomato;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.contenedor__detalle {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.contenedor__termino, .contenedor__detalle {
+  padding-left: 5rem;
+  line-height: 1.5rem;
+}
